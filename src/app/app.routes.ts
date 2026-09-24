@@ -12,6 +12,12 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/numbers-page/numbers-page.component'),
   },
   {
+    path: 'uncommon',
+    title: 'Pipes no tan comunes',
+    loadComponent: () =>
+      import('./pages/uncommon-page/uncommon-page.component'),
+  },
+  {
     path: '**',
     redirectTo: 'basic',
   },
