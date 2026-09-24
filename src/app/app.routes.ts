@@ -18,6 +18,11 @@ export const routes: Routes = [
       import('./pages/uncommon-page/uncommon-page.component'),
   },
   {
+    path: 'custom',
+    title: 'Pipes Personalizados',
+    loadComponent: () => import('./pages/custom-page/custom-page.component'),
+  },
+  {
     path: '**',
     redirectTo: 'basic',
   },
